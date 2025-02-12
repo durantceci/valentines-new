@@ -8,35 +8,70 @@
         body {
             text-align: center;
             background-image: url('https://wallpaperaccess.com/full/12061616.jpg');
-            background-size: cover; /* Ensures the image fills the entire background */
-            background-position: center; /* Centers the image */
-            background-repeat: no-repeat; /* Prevents the image from repeating */
-            height: 100vh; /* Ensures the background covers the entire height */
-            color: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            color: white;
             font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Black transparent box */
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            max-width: 400px;
         }
         h2 {
-            font-size: 40px;
+            font-size: 30px;
         }
-        img {
-            width: 300px;
-            margin-top: 20px;
+        p {
+            font-size: 16px;
+        }
+        .gif-container {
+            margin-top: 15px;
+        }
+        .gif-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 14px;
+            font-style: italic;
         }
         button {
             background-color: #0000ff;
             color: white;
-            padding: 15px 25px;
-            font-size: 20px;
-            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
             cursor: pointer;
             border-radius: 10px;
+            border: none;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ffcc00;
+            color: #0000ff;
         }
     </style>
 </head>
 <body>
-    <h2>Ka-Chow! You won my heart! ❤️</h2>
-    <p>The Mcqueen to my Sally! 🏁💖</p>\
-    <button onclick="window.location.href='index.html'">Go back to the race track</button>
+    <div class="container">
+        <h2>Ka-Chow! You won my heart! ❤️</h2>
+        <p>The McQueen to my Sally! 🏁💖</p>
+        <div class="gif-container">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWkyY2RndDg0eGRmcG04b2ZjNmlzNnk5Mm41bHpld3dodjY1MDg4YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d2iC5UcZ5TGBWz6Y6T/giphy.gif" alt="McQueen and Sally GIF">
+            <p class="caption">(This is us btw)</p>
+        </div>
+        <button onclick="window.location.href='index.html'">Go back to the race track</button>
+    </div>
 </body>
 </html>
+
 
